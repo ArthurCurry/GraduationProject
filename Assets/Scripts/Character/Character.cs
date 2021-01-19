@@ -13,9 +13,13 @@ public abstract class Character
     protected float moveSpeedXZ;
     protected float moveSpeedY;
 
-    protected CharacterState state;//状态机
+    protected CharacterState m_state;//状态机
 
-
+    public virtual void UpdateCharacter()
+    {
+        if(m_state==null)
+            m_state=new PearlStateIdle(self,rigidbody,animator);
+    }
 
 }
 
@@ -24,12 +28,20 @@ public enum CharacterMotionStatus
     Idle,
     Running,
     Walking,
-    Jump
+    Jump,
+    Normal,
+    Combat
 }
 
 public abstract class CharacterState
 {
 
+    protected Rigidbody rigidbody;
+
+    protected Transform self;
+    protected Animator animator;
+
+    protected CharacterState currentState;
     public virtual void StateInit()
     {
 
