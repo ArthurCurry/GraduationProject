@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+
+    [SerializeField]
+    private Character initialCharacter;
     // Start is called before the first frame update
     void Start()
     {
