@@ -12,6 +12,7 @@ public abstract class Character
     protected Vector3 forwardDir;
     protected float moveSpeedXZ;
     protected float moveSpeedY;
+    protected GameObject model;
 
     protected CharacterState m_state;//状态机
 
@@ -19,6 +20,14 @@ public abstract class Character
     {
         if(m_state==null)
             m_state=new PearlStateIdle(self,rigidbody,animator);
+    }
+
+    public virtual void InitCharacterData(Transform transform,Rigidbody rigidbody,Animator animator)
+    {
+        this.self=transform;
+        this.rigidbody=rigidbody;
+        this.animator=animator;
+        this.model=transform.gameObject;
     }
 
 }
