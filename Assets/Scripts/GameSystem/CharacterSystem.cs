@@ -13,10 +13,10 @@ public class CharacterSystem :GameSystem
     {
 
         // base.InitSystem();
-        mcModel=Resources.Load<GameObject>(CharacterIndex.CharacterPearl);
+        mcModel=Resources.Load<GameObject>(CharacterIndex.DoubleSword);
         GameObject mcInstance=GameObject.Instantiate(mcModel,Vector3.zero,mcModel.transform.rotation);
-        mainCharacter=new CharacterPearl(mcInstance.transform,mcInstance.GetComponent<Rigidbody>(),mcInstance.GetComponent<Animator>());
-        
+        //mainCharacter=new CharacterPearl(mcInstance.transform,mcInstance.GetComponent<Rigidbody>(),mcInstance.GetComponent<Animator>());
+        mainCharacter=new DoubleSwordCharacter(mcInstance.transform,mcInstance.GetComponent<Rigidbody>(),mcInstance.GetComponent<Animator>());
     }
 
     public override void OnSystemUpdate()
