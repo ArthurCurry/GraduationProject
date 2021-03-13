@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,8 +8,8 @@ public class CharacterPearl :Character
     public CharacterPearl(Transform transform,Rigidbody rigidbody,Animator animator)
     {
         this.self=transform;
-        this.rigidbody=rigidbody;
-        this.animator=animator;
+        this.rb=GetComponent<Rigidbody>();
+        this.animator=this.GetComponent<Animator>();
         this.model=transform.gameObject;
         if(idleState==null)
             idleState=new PearlStateIdle(self,rigidbody,animator);

@@ -210,6 +210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51c7aaf9860797f4eba3042527f541d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialCharacter: {fileID: 0}
+  playerCharacterSpeed: 10
 --- !u!4 &488673331
 Transform:
   m_ObjectHideFlags: 0
@@ -409,6 +411,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DoubleSword03
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602951804394829382, guid: fa8c779f566a1d1419f5edcbc273171a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3608889454303169642, guid: fa8c779f566a1d1419f5edcbc273171a,
         type: 3}
