@@ -800,7 +800,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
@@ -830,6 +830,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc9d258abbd23274e83b99d0bbb35612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disToTop: 0.9
+  disToBottom: 0.9
+  centorOffset: {x: 0, y: 0.9, z: 0}
+  initialJumpSpeed: 5
+  jumpHeight: 2
+  jumpTime: 0
+  fallAcceleration: 10
   Velocity: 5
 --- !u!1 &3602953375947288816
 GameObject:
