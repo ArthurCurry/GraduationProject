@@ -7,7 +7,7 @@ public  class Character:MonoBehaviour
     protected Rigidbody rb;
 
     protected Transform self;
-    protected Animator animator;
+    public Animator animator;
 
     protected Vector3 forwardDir;
     protected float moveSpeedXZ;
@@ -76,6 +76,11 @@ public abstract class CharacterState
     public virtual void Change()
     {
 
+    }
+
+    public virtual void UpdateAnimationVariables()
+    {
+        
     }
 }
 

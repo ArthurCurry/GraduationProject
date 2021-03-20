@@ -126,7 +126,8 @@ public class DoubleSwordIdleState:CharacterState
         }
         UpdateCharacterDirection();
         rigidbody.velocity=inputDir.normalized*selfCharacter.Velocity+yspeed*Vector3.up;
-        Debug.Log(rigidbody.velocity+" "+self.position.y+" "+yPosLF);        
+        Debug.Log(rigidbody.velocity+" "+self.position.y+" "+yPosLF);
+        UpdateAnimationVariables();        
         // rigidbody.velocity=new Vector3((xspeed>0?1:(xspeed==0?0:-1)),yspeed,(zspeed>0?1:(zspeed==0?0:-1))).normalized*selfCharacter.Velocity;
         // Debug.Log(xspeed+" "+zspeed+" "+selfCharacter.Velocity);
         rbVelocityLF=rigidbody.velocity;
@@ -162,6 +163,13 @@ public class DoubleSwordIdleState:CharacterState
         if(Physics.Raycast(self.position+selfCharacter.centorOffset,Vector3.up,selfCharacter.disToTop,terrainLayer))
             return true;
         return false;
+    }
+
+    public override void UpdateAnimationVariables()
+    {
+        // base.UpdateAnimationVariables();
+        selfCharacter.animator.SetBool("running",rigidbody.velocity.x!=0||rigidbody.velocity.z!=0);
+        selfCharacter.animator.SetBool("onground",isGrounded);
     }
     public override void Change()
     {
