@@ -63,6 +63,7 @@ public class CameraController : MonoBehaviour
         {
             targetObject=target;
         }
+        Debug.Log("switch target");
         ResetStatus();
 
     }
@@ -76,7 +77,7 @@ public class CameraController : MonoBehaviour
         // verticalRotationDegreeOffset=Mathf.Clamp(verticalRotationDegreeOffset,-90,90);
         horizontalVector=Quaternion.AngleAxis(horizontalRotationDegreeDefault+horizontalRotationDegreeOffset,targetObject.up)*defaultHorizontalVector.normalized;
 
-        targetToCameraVector=Quaternion.AngleAxis(Mathf.Clamp(verticalRotationDegreeDefault+verticalRotationDegreeOffset,-90,90),targetObject.right)
+        targetToCameraVector=Quaternion.AngleAxis(Mathf.Clamp(verticalRotationDegreeDefault+verticalRotationDegreeOffset,-80,80),targetObject.right)
         *(Quaternion.AngleAxis(horizontalRotationDegreeDefault+horizontalRotationDegreeOffset,targetObject.up)
         *defaultTargetToCameraVector);
 
@@ -88,7 +89,7 @@ public class CameraController : MonoBehaviour
 
         previousMousePos=curMousePos;
         // Debug.Log(verticalRotationDegreeDefault+verticalRotationDegreeOffset+" "+horizontalRotationDegreeDefault+horizontalRotationDegreeOffset+" mouse:"+curMousePos);
-        Debug.Log(targetObject.right+" "+targetObject.up);
+        // Debug.Log(targetObject.right+" "+targetObject.up);
     }
 
     private void ResetStatus()

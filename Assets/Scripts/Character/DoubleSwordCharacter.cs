@@ -102,6 +102,7 @@ public class DoubleSwordIdleState:CharacterState
             yspeed=0;
             if(Input.GetKeyDown(KeyCode.Space))
             {
+                animator.SetTrigger("jump");
                 yspeed=selfCharacter.initialJumpSpeed;
                 isGrounded=false;
             }
