@@ -13,6 +13,8 @@ public  class Character:MonoBehaviour
     protected float moveSpeedXZ;
     protected float moveSpeedY;
     protected GameObject model;
+
+    protected Transform terrainBeneath;
     public float disToTop;
     public float disToBottom;
     public Vector3 centorOffset;
@@ -22,6 +24,8 @@ public  class Character:MonoBehaviour
 
     public float jumpTime;
     public float fallAcceleration=2f;
+
+    public int hp;
 
 
 

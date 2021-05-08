@@ -356,7 +356,7 @@ MonoBehaviour:
   horizontalRotationDegreeDefault: 0
   horizontalRotationDegreeOffset: 0
   distanceToTarget: 5
-  horizontalSensitivity: 1
+  horizontalSensitivity: 0.5
   verticalSensitivity: 1
   pixelsPerDegree: 5
   targetObject: {fileID: 0}
