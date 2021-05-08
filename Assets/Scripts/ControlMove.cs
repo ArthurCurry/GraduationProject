@@ -78,9 +78,21 @@ public class ControlMove : MonoBehaviour
     }
 
     // 相对运动
-    void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other) 
     {
-        other.transform.SetParent(transform);
+        if(other.transform.tag.Equals("Player"))
+        {
+            other.transform.SetParent(this.transform);
+        }
+    }
+
+    private void OnCollisionExit(Collision other) 
+    {
+        if(other.transform.tag.Equals("Player"))
+        {
+            other.transform.SetParent(null);
+        }
+
     }
     void OnTriggerExit(Collider other)
     {

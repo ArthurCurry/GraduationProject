@@ -22,6 +22,8 @@ public class CameraController : MonoBehaviour
     public int pixelsPerDegree;
 
     public Transform targetObject;
+    [Range(0,1)]
+    public float lerpSpeed;
     public Vector3 targetOffset=Vector3.zero;
     private Vector3 targetObjectPos;
 
@@ -43,7 +45,7 @@ public class CameraController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         if(targetObject==null)
         {
@@ -82,7 +84,7 @@ public class CameraController : MonoBehaviour
         targetToCameraVector=Quaternion.AngleAxis(horizontalRotationDegreeOffset,Vector3.up)*Quaternion.AngleAxis(Mathf.Clamp(verticalRotationDegreeOffset,-80-verticalRotationDegreeDefault,80-verticalRotationDegreeDefault),coordRight)
         *defaultTargetToCameraVector;
 
-        transform.position=targetObjectPos+distanceToTarget*targetToCameraVector;
+        transform.position=Vector3.Lerp( transform.position,targetObjectPos+distanceToTarget*targetToCameraVector,lerpSpeed);
 
         previousMousePos=curMousePos;
     }

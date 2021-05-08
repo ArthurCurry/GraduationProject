@@ -834,7 +834,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &1458044897
 BoxCollider:
@@ -869,6 +869,7 @@ MonoBehaviour:
   jumpHeight: 2
   jumpTime: 0
   fallAcceleration: 10
+  hp: 0
   Velocity: 5
 --- !u!1 &3602953375947288816
 GameObject:
