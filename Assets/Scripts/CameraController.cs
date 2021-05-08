@@ -34,6 +34,8 @@ public class CameraController : MonoBehaviour
     private Vector3 defaultHorizontalVector;
     private Vector3 verticalVector;
     private Vector2 curMousePos;
+
+    private Vector2 coordRight;
     // Start is called before the first frame update
     void Start()
     {
@@ -75,21 +77,14 @@ public class CameraController : MonoBehaviour
         // horizontalRotationDegreeOffset%=360;
         verticalRotationDegreeOffset+=(previousMousePos.y-curMousePos.y)/pixelsPerDegree*verticalSensitivity;
         // verticalRotationDegreeOffset=Mathf.Clamp(verticalRotationDegreeOffset,-90,90);
-        horizontalVector=Quaternion.AngleAxis(horizontalRotationDegreeDefault+horizontalRotationDegreeOffset,targetObject.up)*defaultHorizontalVector.normalized;
+        horizontalVector=Quaternion.AngleAxis(horizontalRotationDegreeOffset,Vector3.up)*defaultHorizontalVector.normalized;
 
-        targetToCameraVector=Quaternion.AngleAxis(Mathf.Clamp(verticalRotationDegreeDefault+verticalRotationDegreeOffset,-80,80),targetObject.right)
-        *(Quaternion.AngleAxis(horizontalRotationDegreeDefault+horizontalRotationDegreeOffset,targetObject.up)
-        *defaultTargetToCameraVector);
-
-        // targetToCameraVector=horizontalVector.normalized*distanceToTarget*Mathf.Cos(Mathf.Clamp(verticalRotationDegreeDefault+verticalRotationDegreeOffset,-90,90))+
-        // Vector3.up*Mathf.Sin(Mathf.Clamp(verticalRotationDegreeDefault+verticalRotationDegreeOffset,-90,90))*distanceToTarget;
-
+        targetToCameraVector=Quaternion.AngleAxis(horizontalRotationDegreeOffset,Vector3.up)*Quaternion.AngleAxis(Mathf.Clamp(verticalRotationDegreeOffset,-80-verticalRotationDegreeDefault,80-verticalRotationDegreeDefault),coordRight)
+        *defaultTargetToCameraVector;
 
         transform.position=targetObjectPos+distanceToTarget*targetToCameraVector;
 
         previousMousePos=curMousePos;
-        // Debug.Log(verticalRotationDegreeDefault+verticalRotationDegreeOffset+" "+horizontalRotationDegreeDefault+horizontalRotationDegreeOffset+" mouse:"+curMousePos);
-        // Debug.Log(targetObject.right+" "+targetObject.up);
     }
 
     private void ResetStatus()
@@ -100,6 +95,8 @@ public class CameraController : MonoBehaviour
         curMousePos=Input.mousePosition;
         previousMousePos=curMousePos;
 
+        coordRight=targetObject.right;
+
         defaultHorizontalVector=-targetObject.forward.normalized;
         verticalVector=-targetObject.forward.normalized;
 
@@ -107,8 +104,8 @@ public class CameraController : MonoBehaviour
         // verticalVector=Quaternion.AngleAxis(Mathf.Clamp(verticalRotationDegreeDefault,-90,90),targetObject.right)*verticalVector;
         // targetToCameraVector=horizontalVector*distanceToTarget*Mathf.Cos(verticalRotationDegreeDefault)+Vector3.up*Mathf.Sin(verticalRotationDegreeDefault);
 
-        targetToCameraVector=Quaternion.AngleAxis(Mathf.Clamp(verticalRotationDegreeDefault,-90,90),targetObject.right)
-        *Quaternion.AngleAxis(Mathf.Clamp(horizontalRotationDegreeDefault,0,360),targetObject.up)
+        targetToCameraVector=Quaternion.AngleAxis(Mathf.Clamp(verticalRotationDegreeDefault,-90,90),coordRight)
+        *Quaternion.AngleAxis(Mathf.Clamp(horizontalRotationDegreeDefault,0,360),Vector3.up)
         *defaultTargetToCameraVector;
 
         this.transform.position=targetObject.position+targetOffset+distanceToTarget*targetToCameraVector;
