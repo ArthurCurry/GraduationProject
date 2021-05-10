@@ -723,6 +723,7 @@ GameObject:
   - component: {fileID: 615082244}
   - component: {fileID: 1458044897}
   - component: {fileID: 8713557219547453705}
+  - component: {fileID: 955094695203729726}
   m_Layer: 0
   m_Name: DoubleSword03
   m_TagString: Player
@@ -844,7 +845,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3602951804394829382}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1.8, z: 1}
@@ -863,7 +864,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   disToTop: 0.9
-  disToBottom: 0.9
+  disToBottom: 1.3
   centorOffset: {x: 0, y: 0.9, z: 0}
   initialJumpSpeed: 5
   jumpHeight: 2
@@ -871,6 +872,20 @@ MonoBehaviour:
   fallAcceleration: 10
   hp: 0
   Velocity: 5
+--- !u!136 &955094695203729726
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3602951804394829382}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.9
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &3602953375947288816
 GameObject:
   m_ObjectHideFlags: 0

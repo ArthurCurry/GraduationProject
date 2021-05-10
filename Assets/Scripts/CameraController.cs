@@ -63,10 +63,16 @@ public class CameraController : MonoBehaviour
 
     public void SwitchTarget(Transform target)
     {
+        if(target==null)
+        {
+            targetObject=null;
+            return;
+        }
         if(target!=targetObject||targetObject==null)
         {
             targetObject=target;
         }
+      
         Debug.Log("switch target");
         ResetStatus();
 

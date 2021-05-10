@@ -94,10 +94,6 @@ public class ControlMove : MonoBehaviour
         }
 
     }
-    void OnTriggerExit(Collider other)
-    {
-        other.transform.SetParent(null);
-    }
 
 }
 
