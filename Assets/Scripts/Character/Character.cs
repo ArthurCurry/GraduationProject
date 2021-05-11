@@ -68,6 +68,8 @@ public abstract class CharacterState
     protected Animator animator;
 
     protected CharacterState currentState;
+
+    protected AnimatorStateInfo animatorStateInfo;
     public virtual void StateInit()
     {
 

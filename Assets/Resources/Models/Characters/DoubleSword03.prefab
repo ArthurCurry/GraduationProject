@@ -8595,6 +8595,7 @@ GameObject:
   - component: {fileID: 3608652783265070112}
   - component: {fileID: 3635131774243235978}
   - component: {fileID: 3625497845285330232}
+  - component: {fileID: 6877570717206650902}
   m_Layer: 0
   m_Name: Hammer1_L
   m_TagString: Untagged
@@ -8661,6 +8662,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6877570717206650902
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3603652699578109142}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7, y: 0.5, z: 0.18506597}
+  m_Center: {x: -0.000000029802322, y: -0.5, z: 0.00000021979213}
 --- !u!1 &3603659968386391804
 GameObject:
   m_ObjectHideFlags: 0
@@ -10050,6 +10064,7 @@ GameObject:
   - component: {fileID: 3606029375849130388}
   - component: {fileID: 3634910515892520434}
   - component: {fileID: 3625627439927522596}
+  - component: {fileID: 6981221102492428390}
   m_Layer: 0
   m_Name: Axe1_R
   m_TagString: Untagged
@@ -10116,6 +10131,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6981221102492428390
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3604854422799043052}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7, y: 0.5, z: 0.18506597}
+  m_Center: {x: -0.000000029802322, y: -0.74, z: 0.00000021979213}
 --- !u!1 &3604857458391996780
 GameObject:
   m_ObjectHideFlags: 0

@@ -101,6 +101,11 @@ public class DoubleSwordIdleState : CharacterState {
                 yspeed = selfCharacter.initialJumpSpeed;
                 isGrounded = false;
             }
+            else if(Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                animator.SetTrigger("attack");
+                
+            }
         } else {
             if (yspeed >= 0 && ImpactOnTop ()) {
                 yspeed = 0;
@@ -108,8 +113,15 @@ public class DoubleSwordIdleState : CharacterState {
             yspeed -= selfCharacter.fallAcceleration * Time.deltaTime;
 
         }
+        if(animator.GetCurrentAnimatorStateInfo(0).IsTag("attack"))
+        {
+            rigidbody.velocity=Vector3.zero;
+        }
+        else
+        {
         UpdateCharacterDirection ();
         rigidbody.velocity = inputDir.normalized * selfCharacter.Velocity + yspeed * Vector3.up;
+        }
         // if (terrainCurBeneath == terrainPreBeneath) 
         // {
         //     self.position += terrainCurPos - terrainPrePos;
