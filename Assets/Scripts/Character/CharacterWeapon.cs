@@ -12,20 +12,32 @@ public class CharacterWeapon : MonoBehaviour
 
     private Animator characterAnim;
 
+    private Animator characterCurAnimState;
+
+    private BoxCollider col;
+
     void Start()
     {
-        
+        InitWeaponStatus();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(col.enabled==false&&characterAnim.GetCurrentAnimatorStateInfo(0).IsTag("attack"))
+        {
+            col.enabled=true;
+        }
+        if(!characterAnim.GetCurrentAnimatorStateInfo(0).IsTag("attack"))
+        {
+            col.enabled=false;
+        }
     }
 
     public void InitWeaponStatus()
     {
-        character=transform.GetComponentInParent<Character>();
+        col=this.GetComponent<BoxCollider>();
+        col.enabled=false;
         characterAnim=transform.GetComponentInParent<Animator>();
     }
 
@@ -35,10 +47,17 @@ public class CharacterWeapon : MonoBehaviour
     /// <param name="other">The other Collider involved in this collision.</param>
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log(other.gameObject.name+" "+other.transform.tag);
         if(other.transform.tag.Equals("MoveMechanism"))
         {
-            MoveMechanism mm=other.transform.GetComponent<MoveMechanism>();
+            MoveMechanism mm=other.transform.parent.GetComponent<MoveMechanism>();
             mm.implement=!mm.implement;
+        }
+        else if(other.transform.tag.Equals("Player")||other.transform.tag.Equals("AICharacter"))
+        {
+            Character character=other.transform.GetComponent<Character>();
+            character.hp-=this.damage;
+            character.hp=character.hp>=0?character.hp:0;
         }
     }
 }

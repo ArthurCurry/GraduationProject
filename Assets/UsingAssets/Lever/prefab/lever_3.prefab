@@ -86,9 +86,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2360121103228499260}
+  - component: {fileID: 6873158063500220825}
   m_Layer: 8
   m_Name: lever_3
-  m_TagString: Untagged
+  m_TagString: MoveMechanism
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,6 +110,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6873158063500220825
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2360121103228201244}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.07}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2360121103228201246
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,7 +134,6 @@ GameObject:
   - component: {fileID: 2360121103228499262}
   - component: {fileID: 2360121103229269278}
   - component: {fileID: 2360121103230400478}
-  - component: {fileID: 2360121103130444215}
   m_Layer: 8
   m_Name: lever_3xB
   m_TagString: Untagged
@@ -187,16 +200,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &2360121103130444215
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2360121103228201246}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.04139306, y: 0.1739274, z: 0.023632528}
-  m_Center: {x: -0.00000003352762, y: 0.067446664, z: -4.656614e-10}

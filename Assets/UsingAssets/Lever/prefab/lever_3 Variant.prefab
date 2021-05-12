@@ -10,7 +10,12 @@ PrefabInstance:
     - target: {fileID: 2360121103228201244, guid: e3464fec1fb0e674fb73f76c29065ca5,
         type: 3}
       propertyPath: m_Name
-      value: lever_3
+      value: lever_3 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360121103228201244, guid: e3464fec1fb0e674fb73f76c29065ca5,
+        type: 3}
+      propertyPath: m_TagString
+      value: MoveMechanism
       objectReference: {fileID: 0}
     - target: {fileID: 2360121103228499260, guid: e3464fec1fb0e674fb73f76c29065ca5,
         type: 3}

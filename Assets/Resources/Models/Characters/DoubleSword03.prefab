@@ -1340,7 +1340,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3608947117273551168}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -10.853637, y: 20.864897, z: -9.813811}
+  m_LocalEulerAnglesHint: {x: -7.979873, y: -3.6549187, z: -6.108285}
 --- !u!1 &3602977245413487038
 GameObject:
   m_ObjectHideFlags: 0
@@ -2858,7 +2858,7 @@ Transform:
   - {fileID: 3606076221432094848}
   m_Father: {fileID: 3606232254874978358}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -14.079106, y: 86.958466, z: -103.31632}
+  m_LocalEulerAnglesHint: {x: 10.379457, y: 161.97284, z: -49.930943}
 --- !u!1 &3603064225911432972
 GameObject:
   m_ObjectHideFlags: 0
@@ -7729,7 +7729,7 @@ Transform:
   - {fileID: 3605746083705034186}
   m_Father: {fileID: 3606232254874978358}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 3.739319, y: -83.695656, z: 107.9541}
+  m_LocalEulerAnglesHint: {x: -50.10572, y: -93.345436, z: 76.0738}
 --- !u!1 &3603573646143251494
 GameObject:
   m_ObjectHideFlags: 0
@@ -8596,6 +8596,7 @@ GameObject:
   - component: {fileID: 3635131774243235978}
   - component: {fileID: 3625497845285330232}
   - component: {fileID: 6877570717206650902}
+  - component: {fileID: 6661436756380228875}
   m_Layer: 0
   m_Name: Hammer1_L
   m_TagString: Untagged
@@ -8675,6 +8676,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7, y: 0.5, z: 0.18506597}
   m_Center: {x: -0.000000029802322, y: -0.5, z: 0.00000021979213}
+--- !u!114 &6661436756380228875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3603652699578109142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9fd6bf5bea30e48b14388f9fa315db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 50
+  character: {fileID: 8713557219547453705}
 --- !u!1 &3603659968386391804
 GameObject:
   m_ObjectHideFlags: 0
@@ -10065,6 +10080,7 @@ GameObject:
   - component: {fileID: 3634910515892520434}
   - component: {fileID: 3625627439927522596}
   - component: {fileID: 6981221102492428390}
+  - component: {fileID: 5904243571349044023}
   m_Layer: 0
   m_Name: Axe1_R
   m_TagString: Untagged
@@ -10144,6 +10160,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7, y: 0.5, z: 0.18506597}
   m_Center: {x: -0.000000029802322, y: -0.74, z: 0.00000021979213}
+--- !u!114 &5904243571349044023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3604854422799043052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9fd6bf5bea30e48b14388f9fa315db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 50
+  character: {fileID: 8713557219547453705}
 --- !u!1 &3604857458391996780
 GameObject:
   m_ObjectHideFlags: 0
@@ -10531,7 +10561,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3609066995297938306}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 54.83877, y: -148.85023, z: 143.78455}
+  m_LocalEulerAnglesHint: {x: 13.829456, y: 178.58798, z: 150.9931}
 --- !u!1 &3604888028593757192
 GameObject:
   m_ObjectHideFlags: 0
