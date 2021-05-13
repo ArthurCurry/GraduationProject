@@ -80,8 +80,10 @@ public class ControlMove : MonoBehaviour
     // 相对运动
     private void OnCollisionEnter(Collision other) 
     {
+        Debug.Log(other.gameObject.name);
         if(other.transform.tag.Equals("Player"))
         {
+            Debug.Log("player enter platform");
             other.transform.SetParent(this.transform);
         }
     }

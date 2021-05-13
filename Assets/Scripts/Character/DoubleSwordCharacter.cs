@@ -21,6 +21,14 @@ public class DoubleSwordCharacter : Character {
     public override void UpdateCharacter () {
         m_state.StateUpdate ();
     }
+
+    // private void OnCollisionEnter(Collision other) {
+    //     Debug.Log(other.gameObject.name);
+    //     if(other.gameObject.layer.Equals(LayerMask.NameToLayer("Terrain")))
+    //     {
+    //         this.transform.SetParent(other.transform);
+    //     }
+    // }
 }
 
 public class DoubleSwordIdleState : CharacterState {
@@ -122,10 +130,10 @@ public class DoubleSwordIdleState : CharacterState {
         UpdateCharacterDirection ();
         rigidbody.velocity = inputDir.normalized * selfCharacter.Velocity + yspeed * Vector3.up;
         }
-        // if (terrainCurBeneath == terrainPreBeneath) 
-        // {
-        //     self.position += terrainCurPos - terrainPrePos;
-        // }
+        if (terrainCurBeneath == terrainPreBeneath) 
+        {
+            self.position += terrainCurPos - terrainPrePos;
+        }
         // Debug.Log(rigidbody.velocity+" "+self.position.y+" "+yPosLF);
         UpdateAnimationVariables ();
         // rigidbody.velocity=new Vector3((xspeed>0?1:(xspeed==0?0:-1)),yspeed,(zspeed>0?1:(zspeed==0?0:-1))).normalized*selfCharacter.Velocity;
@@ -171,4 +179,6 @@ public class DoubleSwordIdleState : CharacterState {
     public override void Change () {
 
     }
+
+    
 }
