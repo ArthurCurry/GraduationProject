@@ -846,10 +846,10 @@ BoxCollider:
   m_GameObject: {fileID: 3602951804394829382}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.8, z: 1}
-  m_Center: {x: 0, y: 0.91, z: 0}
+  m_Size: {x: 0.4, y: 2.2, z: 0.41}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &8713557219547453705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -862,9 +862,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc9d258abbd23274e83b99d0bbb35612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  self: {fileID: 0}
   animator: {fileID: 0}
+  model: {fileID: 0}
   disToTop: 0.9
-  disToBottom: 1.3
+  disToBottom: 1.1
+  centorToFeet: 0
   centorOffset: {x: 0, y: 0.9, z: 0}
   initialJumpSpeed: 5
   jumpHeight: 2
@@ -872,6 +876,7 @@ MonoBehaviour:
   fallAcceleration: 10
   hp: 0
   Velocity: 5
+  stayOnGround: 0
 --- !u!136 &955094695203729726
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -883,7 +888,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 1.9
+  m_Height: 2.15
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &3602953375947288816

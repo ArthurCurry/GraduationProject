@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DoubleSwordCharacter : Character {
     private CharacterSystem cs;
+    public bool stayOnGround;
     private void Start () {
         this.self = this.transform;
         this.rb = GetComponent<Rigidbody> ();
@@ -22,13 +23,15 @@ public class DoubleSwordCharacter : Character {
         m_state.StateUpdate ();
     }
 
-    // private void OnCollisionEnter(Collision other) {
-    //     Debug.Log(other.gameObject.name);
-    //     if(other.gameObject.layer.Equals(LayerMask.NameToLayer("Terrain")))
-    //     {
-    //         this.transform.SetParent(other.transform);
-    //     }
-    // }
+    /// <summary>
+    /// OnCollisionStay is called once per frame for every collider/rigidbody
+    /// that is touching rigidbody/collider.
+    /// </summary>
+    /// <param name="other">The Collision data associated with this collision.</param>
+    void OnCollisionStay(Collision other)
+    {
+        
+    }
 }
 
 public class DoubleSwordIdleState : CharacterState {
@@ -52,6 +55,7 @@ public class DoubleSwordIdleState : CharacterState {
     private Transform terrainPreBeneath;
     private Vector3 terrainPrePos;
     private Vector3 terrainCurPos;
+    RaycastHit raycastHit = new RaycastHit ();
     public float velocity {
 
         get {
@@ -130,10 +134,10 @@ public class DoubleSwordIdleState : CharacterState {
         UpdateCharacterDirection ();
         rigidbody.velocity = inputDir.normalized * selfCharacter.Velocity + yspeed * Vector3.up;
         }
-        if (terrainCurBeneath == terrainPreBeneath) 
-        {
-            self.position += terrainCurPos - terrainPrePos;
-        }
+        // if (terrainCurBeneath == terrainPreBeneath) 
+        // {
+        //     self.position += terrainCurPos - terrainPrePos;
+        // }
         // Debug.Log(rigidbody.velocity+" "+self.position.y+" "+yPosLF);
         UpdateAnimationVariables ();
         // rigidbody.velocity=new Vector3((xspeed>0?1:(xspeed==0?0:-1)),yspeed,(zspeed>0?1:(zspeed==0?0:-1))).normalized*selfCharacter.Velocity;
@@ -154,13 +158,22 @@ public class DoubleSwordIdleState : CharacterState {
     }
 
     private bool FallOnGround () {
-        RaycastHit raycastHit = new RaycastHit ();
+        
         Debug.DrawRay (self.position + selfCharacter.centorOffset, Vector3.down * selfCharacter.disToBottom, Color.red);
         if (Physics.Raycast (self.position + selfCharacter.centorOffset, Vector3.down, out raycastHit, selfCharacter.disToBottom, terrainLayer)) {
+            
             terrainCurBeneath = raycastHit.transform;
+            try
+            {
+            this.self.SetParent(terrainCurBeneath.GetComponentInParent<ControlMove>().transform);
+            }
+            catch{
+                this.self.SetParent(null);
+            }
             return true;
         }
         terrainCurBeneath = null;
+        // this.self.SetParent(terrainCurBeneath);
         Debug.Log (raycastHit.transform == null);
         return false;
     }

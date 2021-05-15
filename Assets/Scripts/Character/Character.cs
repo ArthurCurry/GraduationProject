@@ -4,19 +4,20 @@ using UnityEngine;
 
 public  class Character:MonoBehaviour
 {
-    protected Rigidbody rb;
+    public Rigidbody rb;
 
-    protected Transform self;
+    public Transform self;
     public Animator animator;
 
     protected Vector3 forwardDir;
     protected float moveSpeedXZ;
     protected float moveSpeedY;
-    protected GameObject model;
+    public GameObject model;
 
     protected Transform terrainBeneath;
     public float disToTop;
     public float disToBottom;
+    public float centorToFeet;
     public Vector3 centorOffset;
     public float initialJumpSpeed=5f;
 
