@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: 0750d18e3be49b8478ac3aeebecd81e1
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Box001
+    100002: Box006
+    100004: Flower Fairy
+    100006: //RootNode
+    100008: Rig
+    100010: RigHead
+    100012: RigHeadGizmo
+    100014: RigLArm1
+    100016: RigLArm1Gizmo
+    100018: RigLArm2
+    100020: RigLArm2Gizmo
+    100022: RigLArmFinger1
+    100024: RigLArmFinger2
+    100026: RigLArmFinger3
+    100028: RigLArmFinger4
+    100030: RigLArmPalm
+    100032: RigLArmPalmGizmo
+    100034: RigNeck
+    100036: RigPelvis
+    100038: RigPelvisGizmo
+    100040: RigRArm1
+    100042: RigRArm1Gizmo
+    100044: RigRArm2
+    100046: RigRArm2Gizmo
+    100048: RigRArmFinger1
+    100050: RigRArmFinger2
+    100052: RigRArmFinger3
+    100054: RigRArmFinger4
+    100056: RigRArmPalm
+    100058: RigRArmPalmGizmo
+    100060: RigRibcage
+    100062: RigRibcageGizmo
+    100064: RigSpine1
+    100066: RigSpine2
+    100068: RigTail1
+    100070: RigTail1Gizmo
+    100072: RigTail2
+    100074: RigTail2Gizmo
+    100076: RigTail3
+    100078: RigTail3Gizmo
+    100080: RigTail4
+    100082: RigTail4Gizmo
+    100084: RigWeapon
+    100086: RigWeaponGizmo
+    400000: Box001
+    400002: Box006
+    400004: Flower Fairy
+    400006: //RootNode
+    400008: Rig
+    400010: RigHead
+    400012: RigHeadGizmo
+    400014: RigLArm1
+    400016: RigLArm1Gizmo
+    400018: RigLArm2
+    400020: RigLArm2Gizmo
+    400022: RigLArmFinger1
+    400024: RigLArmFinger2
+    400026: RigLArmFinger3
+    400028: RigLArmFinger4
+    400030: RigLArmPalm
+    400032: RigLArmPalmGizmo
+    400034: RigNeck
+    400036: RigPelvis
+    400038: RigPelvisGizmo
+    400040: RigRArm1
+    400042: RigRArm1Gizmo
+    400044: RigRArm2
+    400046: RigRArm2Gizmo
+    400048: RigRArmFinger1
+    400050: RigRArmFinger2
+    400052: RigRArmFinger3
+    400054: RigRArmFinger4
+    400056: RigRArmPalm
+    400058: RigRArmPalmGizmo
+    400060: RigRibcage
+    400062: RigRibcageGizmo
+    400064: RigSpine1
+    400066: RigSpine2
+    400068: RigTail1
+    400070: RigTail1Gizmo
+    400072: RigTail2
+    400074: RigTail2Gizmo
+    400076: RigTail3
+    400078: RigTail3Gizmo
+    400080: RigTail4
+    400082: RigTail4Gizmo
+    400084: RigWeapon
+    400086: RigWeaponGizmo
+    2100000: No Name
+    2100002: 'Material #25'
+    2300000: Box001
+    2300002: Box006
+    2300004: Flower Fairy
+    2300006: //RootNode
+    3300000: Box001
+    3300002: Box006
+    3300004: Flower Fairy
+    3300006: //RootNode
+    4300000: Box001
+    4300002: Flower Fairy
+    4300004: Box006
+    9500000: //RootNode
+    13700000: Flower Fairy
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

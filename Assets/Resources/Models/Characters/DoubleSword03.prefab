@@ -552,7 +552,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3606166530514621590
 Transform:
   m_ObjectHideFlags: 0
@@ -721,10 +721,10 @@ GameObject:
   - component: {fileID: 3608889454303169642}
   - component: {fileID: 3699413418375241470}
   - component: {fileID: 615082244}
+  - component: {fileID: 955094695203729726}
   - component: {fileID: 1458044897}
   - component: {fileID: 8713557219547453705}
-  - component: {fileID: 955094695203729726}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DoubleSword03
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -837,6 +837,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!136 &955094695203729726
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3602951804394829382}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2.15
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!65 &1458044897
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -877,20 +891,6 @@ MonoBehaviour:
   hp: 0
   Velocity: 5
   stayOnGround: 0
---- !u!136 &955094695203729726
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3602951804394829382}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2.15
-  m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &3602953375947288816
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,7 +1046,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3606105018547429836
 Transform:
   m_ObjectHideFlags: 0
@@ -5038,7 +5038,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3608594354609083376
 Transform:
   m_ObjectHideFlags: 0

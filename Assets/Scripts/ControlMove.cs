@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// 来回移动平台的控制
 /// </summary>
-public class ControlMove : MonoBehaviour
+public class ControlMove : AllMechanism
 {
 
     [Tooltip("平台移动的结束位置")]
@@ -30,7 +30,7 @@ public class ControlMove : MonoBehaviour
     }
     void Update()
     {
-        on= mechanism.GetComponent<MoveMechanism>().implement;  // 接受控制机关的指令
+        on = mechanism.GetComponent<MoveMechanism>().implement;  // 接受控制机关的指令
         if (on)                    // 该部分是为了让他不自己乱动，控制机关给一次命令，就动一次
         {
             toStop = true;
@@ -80,12 +80,12 @@ public class ControlMove : MonoBehaviour
     // 相对运动
     private void OnCollisionEnter(Collision other) 
     {
-        // Debug.Log(other.gameObject.name);
-        // if(other.transform.tag.Equals("Player"))
-        // {
-        //     Debug.Log("player enter platform");
-        //     other.transform.SetParent(this.transform);
-        // }
+        Debug.Log(other.gameObject.name);
+        if(other.transform.tag.Equals("Player"))
+        {
+            Debug.Log("player enter platform");
+            other.transform.SetParent(this.transform);
+        }
     }
 
     private void OnCollisionExit(Collision other) 

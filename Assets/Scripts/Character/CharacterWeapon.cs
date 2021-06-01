@@ -47,11 +47,11 @@ public class CharacterWeapon : MonoBehaviour
     /// <param name="other">The other Collider involved in this collision.</param>
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name+" "+other.transform.tag);
+        // Debug.Log(other.gameObject.name+" "+other.transform.tag);
         if(other.transform.tag.Equals("MoveMechanism"))
         {
             MoveMechanism mm=other.transform.parent.GetComponent<MoveMechanism>();
-            mm.implement=!mm.implement;
+            mm.ChangeStatus();
         }
         else if(other.transform.tag.Equals("Player")||other.transform.tag.Equals("AICharacter"))
         {

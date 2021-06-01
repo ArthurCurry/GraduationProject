@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rotate : MonoBehaviour
+public class Rotate : AllMechanism
 {
     [Tooltip("x旋转速度")]
     public float xSpeed = 25f;
@@ -21,4 +21,24 @@ public class Rotate : MonoBehaviour
     {
         gameObject.transform.Rotate(xSpeed * Time.deltaTime, ySpeed * Time.deltaTime, zSpeed * Time.deltaTime, Space.Self);
     }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        Debug.Log(other.gameObject.name);
+        if (other.transform.tag.Equals("Player"))
+        {
+            Debug.Log("player enter platform");
+            other.transform.SetParent(this.transform);
+        }
+    }
+
+    private void OnCollisionExit(Collision other)
+    {
+        if (other.transform.tag.Equals("Player"))
+        {
+            other.transform.SetParent(null);
+        }
+
+    }
+
 }

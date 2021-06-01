@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// 来回移动平台的控制
 /// </summary>
-public class ControlContinuedMove : MonoBehaviour
+public class ControlContinuedMove : AllMechanism
 {
 
     [Tooltip("平台移动的结束位置")]

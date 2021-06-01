@@ -34,6 +34,11 @@ public class DoubleSwordCharacter : Character {
     }
 }
 
+public class DoubleSwordDeadState:CharacterState
+{
+    
+}
+
 public class DoubleSwordIdleState : CharacterState {
 
     private Character selfCharacter;
@@ -165,7 +170,7 @@ public class DoubleSwordIdleState : CharacterState {
             terrainCurBeneath = raycastHit.transform;
             try
             {
-            this.self.SetParent(terrainCurBeneath.GetComponentInParent<ControlMove>().transform);
+            this.self.SetParent(terrainCurBeneath.GetComponentInParent<AllMechanism>().transform);
             }
             catch{
                 this.self.SetParent(null);

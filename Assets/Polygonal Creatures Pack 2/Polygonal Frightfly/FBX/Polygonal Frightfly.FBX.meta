@@ -1,0 +1,245 @@
+fileFormatVersion: 2
+guid: 103932fe435e2ea4cb109a0e49898b83
+timeCreated: 1561619625
+licenseType: Store
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Polygonal Frightfly
+    100004: Rig
+    100006: RigHead
+    100008: RigHeadGizmo
+    100010: RigJaw
+    100012: RigJawGizmo
+    100014: RigLClaw1
+    100016: RigLLowWing01
+    100018: RigLLowWing01Gizmo
+    100020: RigLLowWing02
+    100022: RigLLowWing02Gizmo
+    100024: RigLLowWing03
+    100026: RigLLowWing03Gizmo
+    100028: RigLLowWing04
+    100030: RigLLowWing04Gizmo
+    100032: RigLTail1
+    100034: RigLTail1Gizmo
+    100036: RigLTail2
+    100038: RigLTail2Gizmo
+    100040: RigLTail3
+    100042: RigLTail3Gizmo
+    100044: RigLTailPalm
+    100046: RigLTailPalmGizmo
+    100048: RigLTailSpike1
+    100050: RigLTailSpike1Gizmo
+    100052: RigLTailSpike2
+    100054: RigLTailSpike2Gizmo
+    100056: RigLTailSpike3
+    100058: RigLTailSpike3Gizmo
+    100060: RigLUpWing01
+    100062: RigLUpWing01Gizmo
+    100064: RigLUpWing02
+    100066: RigLUpWing02Gizmo
+    100068: RigLUpWing03
+    100070: RigLUpWing03Gizmo
+    100072: RigLUpWing04
+    100074: RigLUpWing04Gizmo
+    100076: RigPelvis
+    100078: RigPelvisGizmo
+    100080: RigRClaw1
+    100082: RigRClaw1Gizmo
+    100084: RigRibcage
+    100086: RigRibcageGizmo
+    100088: RigRLowWing01
+    100090: RigRLowWing01Gizmo
+    100092: RigRLowWing02
+    100094: RigRLowWing02Gizmo
+    100096: RigRLowWing03
+    100098: RigRLowWing03Gizmo
+    100100: RigRLowWing04
+    100102: RigRLowWing04Gizmo
+    100104: RigRTail1
+    100106: RigRTail1Gizmo
+    100108: RigRTail2
+    100110: RigRTail2Gizmo
+    100112: RigRTail3
+    100114: RigRTail3Gizmo
+    100116: RigRTailPalm
+    100118: RigRTailPalmGizmo
+    100120: RigRTailSpike1
+    100122: RigRTailSpike1Gizmo
+    100124: RigRTailSpike2
+    100126: RigRTailSpike2Gizmo
+    100128: RigRTailSpike3
+    100130: RigRTailSpike3Gizmo
+    100132: RigRUpWing01
+    100134: RigRUpWing01Gizmo
+    100136: RigRUpWing02
+    100138: RigRUpWing02Gizmo
+    100140: RigRUpWing03
+    100142: RigRUpWing03Gizmo
+    100144: RigRUpWing04
+    100146: RigRUpWing04Gizmo
+    100148: RigSpine
+    100150: RigSpine1
+    100152: RigSpine2
+    100154: RigLClaw1Gizmo
+    400000: //RootNode
+    400002: Polygonal Frightfly
+    400004: Rig
+    400006: RigHead
+    400008: RigHeadGizmo
+    400010: RigJaw
+    400012: RigJawGizmo
+    400014: RigLClaw1
+    400016: RigLLowWing01
+    400018: RigLLowWing01Gizmo
+    400020: RigLLowWing02
+    400022: RigLLowWing02Gizmo
+    400024: RigLLowWing03
+    400026: RigLLowWing03Gizmo
+    400028: RigLLowWing04
+    400030: RigLLowWing04Gizmo
+    400032: RigLTail1
+    400034: RigLTail1Gizmo
+    400036: RigLTail2
+    400038: RigLTail2Gizmo
+    400040: RigLTail3
+    400042: RigLTail3Gizmo
+    400044: RigLTailPalm
+    400046: RigLTailPalmGizmo
+    400048: RigLTailSpike1
+    400050: RigLTailSpike1Gizmo
+    400052: RigLTailSpike2
+    400054: RigLTailSpike2Gizmo
+    400056: RigLTailSpike3
+    400058: RigLTailSpike3Gizmo
+    400060: RigLUpWing01
+    400062: RigLUpWing01Gizmo
+    400064: RigLUpWing02
+    400066: RigLUpWing02Gizmo
+    400068: RigLUpWing03
+    400070: RigLUpWing03Gizmo
+    400072: RigLUpWing04
+    400074: RigLUpWing04Gizmo
+    400076: RigPelvis
+    400078: RigPelvisGizmo
+    400080: RigRClaw1
+    400082: RigRClaw1Gizmo
+    400084: RigRibcage
+    400086: RigRibcageGizmo
+    400088: RigRLowWing01
+    400090: RigRLowWing01Gizmo
+    400092: RigRLowWing02
+    400094: RigRLowWing02Gizmo
+    400096: RigRLowWing03
+    400098: RigRLowWing03Gizmo
+    400100: RigRLowWing04
+    400102: RigRLowWing04Gizmo
+    400104: RigRTail1
+    400106: RigRTail1Gizmo
+    400108: RigRTail2
+    400110: RigRTail2Gizmo
+    400112: RigRTail3
+    400114: RigRTail3Gizmo
+    400116: RigRTailPalm
+    400118: RigRTailPalmGizmo
+    400120: RigRTailSpike1
+    400122: RigRTailSpike1Gizmo
+    400124: RigRTailSpike2
+    400126: RigRTailSpike2Gizmo
+    400128: RigRTailSpike3
+    400130: RigRTailSpike3Gizmo
+    400132: RigRUpWing01
+    400134: RigRUpWing01Gizmo
+    400136: RigRUpWing02
+    400138: RigRUpWing02Gizmo
+    400140: RigRUpWing03
+    400142: RigRUpWing03Gizmo
+    400144: RigRUpWing04
+    400146: RigRUpWing04Gizmo
+    400148: RigSpine
+    400150: RigSpine1
+    400152: RigSpine2
+    400154: RigLClaw1Gizmo
+    2300000: //RootNode
+    2300002: Polygonal Frightfly
+    3300000: //RootNode
+    3300002: Polygonal Frightfly
+    4300000: Polygonal Frightfly
+    9500000: //RootNode
+    13700000: Polygonal Frightfly
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

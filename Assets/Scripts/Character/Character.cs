@@ -32,6 +32,17 @@ public  class Character:MonoBehaviour
 
     protected CharacterState m_state;//状态机
 
+    public CharacterState State{
+        get
+        {
+            return m_state;
+        }
+        set
+        {
+            m_state=value;
+        }
+    }
+
     public float Velocity;
 
     public virtual void UpdateCharacter()
@@ -73,7 +84,7 @@ public abstract class CharacterState
     protected AnimatorStateInfo animatorStateInfo;
     public virtual void StateInit()
     {
-
+        
     }
     public virtual void StateUpdate()
     {
